@@ -11,6 +11,11 @@ const routes:Array<RouteRecordRaw> = [
           name:'第一页',
           component: ()=> import('../views/page/one.vue'),
         },
+        {
+          path:'/two',
+          name:'第二页',
+          component:()=> import('../views/page/two.vue')
+        }
       ]
     }
 ]

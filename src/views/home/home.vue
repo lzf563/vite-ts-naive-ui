@@ -9,6 +9,8 @@
               <router-view/>
           </div>
       </div>
+
+      <!-- <img src="../../assets/logo.png" alt=""> -->
     </div>
 </template>
 
@@ -30,6 +32,11 @@ export default defineComponent({
           console.log(rightBox[0]);
           console.log(typeof("calc(100% - " +  leftBox[0].offsetWidth + "px)"))
           rightBox[0].style.width = "calc(100% - " +  leftBox[0].offsetWidth + "px)" ;
+
+          // let Height = ;
+          // console.log(Height, 1111);
+          leftBox[0].style.height 
+
       }
       onMounted(()=>{
         getRightBoxWidth();
@@ -44,11 +51,13 @@ export default defineComponent({
     justify-content: space-between;
     .leftBox{
       width: 290px;
-      height: 300px;
-      // background-color: violet;
+      // height: 100%;
+      box-shadow: 3px 3px 2px #eeeeee;
     }
     .rightBox{
       height: 300px;
+      box-shadow: 3px 3px 2px #eeeeee;
+      margin-left: 10px;
       // background-color: yellow;
     }
   }

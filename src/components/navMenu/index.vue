@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 @click="toHome">导航栏</h2>
+        <!-- <h2 @click="toHome">导航栏</h2> -->
         <n-menu @update:value="handleUpdateValue" :options="menuOptions"></n-menu>
     </div>
 </template>
@@ -10,6 +10,10 @@ const menuOptions = [
     {
       label:"第一个页面",
       key:'/one',
+    },
+    {
+      label:'第二个页面',
+      key:'/two'
     }
 ];
 

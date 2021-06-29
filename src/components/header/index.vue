@@ -1,5 +1,8 @@
 <template>
     <div class="header">
+      <!-- <n-avatar
+        size="large" src="../../assets/logo.png"
+      /> -->
       <h2>我的头部</h2>
     </div>
 </template>
@@ -20,10 +23,12 @@ export default defineComponent({
  .header{
     width: 100%;
     height: 70px;
-    background-color: aqua;
+    // background-color: aqua;
     line-height: 68px;
-    text-align: center;
+    box-shadow: 3px 3px 2px #eeeeee;
+    margin-bottom: 5px;
     h2{
+      text-align: center;
       color: red;
     }
   }
